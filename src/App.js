@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import SubmitButton from './components/SubmitButton';
+import Heading from './components/Heading';
+import SubHeading from './components/SubHeading';
+import InputQuery from './components/InputQuery';
+import { BrowserRouter as Router, Switch,Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {/* <Route render={(props)=><Heading/>}/>
+      <SubHeading render={(props)=><SubHeading/>}/>
+      <InputQuery render={(props)=><InputQuery/>}/>
+      <SubmitButton render={(props)=><SubmitButton/>}/> */}
+      <Heading/>
+      <SubHeading/>
+      <InputQuery/>
+      <SubmitButton/>
     </div>
   );
 }
